@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Montserrat:wght@400;500&family=Space+Mono:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.logo {
+    font-family: "Inconsolata", monospace;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 25px;
+    color: #333;
+    text-transform: uppercase;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    /*letter-spacing: -0.08em;*/
+}
+
+.container {
+    margin: 5%;
+    display: flex;
+}
+
+img {
+    width: 550px;
+}
+
+.content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 586px;
+    margin-left: 120px;
+}
+
+.content h1{
+    font-family: "Space Mono",monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+    color: #333;
+}
+
+.content p{    
+    font-family: "Space Mono",monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    color: #4f4f4f;
+    padding: 36px 0 64px 0;
+    max-width: 381px;
+}
+
+.content a{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+    background: #333;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Space Mono",monospace;
+    font-style: normal; 
+    letter-spacing: -0.035em;
+    padding: 1.6em 3em;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+}
+
+footer {
+    font-family: "Montserrat", monospace;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333;
+    text-align: center;
+    bottom:0;
+    
+
+width:100%;
+
+padding-top:50px;
+
+height:50px;
+}
+
+@media screen and (max-width: 1100px) {
+    img {
+        width: 400px;
+    }
+    .content {
+        width: 500px;
+        margin-left: 80px;
+    }
+    .content h1 {
+        font-size: 50px;
+        line-height: normal;
+    }
+    .content p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 965px) {
+    img {
+        width: 400px;
+    }
+    .content {
+        width:100vw ;
+        margin-left: 30px;
+    }
+    .content h1 {
+        font-size: 40px;
+        line-height: normal;
+    }
+    .content p{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        margin: 85px 0px 80px 0px;
+        display: flex;
+        justify-content: center;
+    }
+    img {
+        width: 500px;
+        align-items: center;
+    }
+    .container {
+        display: initial;
+    }
+    .content h1 {
+        font-size: 35px;
+        line-height: normal;
+        /* width: 500px; */
+    }
+    .content p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+   img {
+       width: 350px;
+    }
+  }
+
